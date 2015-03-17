@@ -1,0 +1,29 @@
+<snippet>
+	<content><![CDATA[
+	'use strict';
+
+(function (root, factory) {
+	if(typeof module === "object" && module.exports) {
+		module.exports = factory();
+	} else if(typeof define === "function" && define.amd) {
+		define([], factory);
+	} else {
+		root.${1:Test} = factory();
+	}
+}(this, function () {
+	/**
+	 * $2
+	 *
+	 * @param $3
+	 * @return $4
+	 */
+	function ${1:Test} () {
+		$5
+	}
+
+	return ${1:Test};
+}));
+]]></content>
+	<tabTrigger>jsmod</tabTrigger>
+	<scope>source.js</scope>
+</snippet>
