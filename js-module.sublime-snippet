@@ -1,6 +1,5 @@
 <snippet>
-	<content><![CDATA[
-	'use strict';
+	<content><![CDATA['use strict';
 
 (function (root, factory) {
 	if(typeof module === "object" && module.exports) {
